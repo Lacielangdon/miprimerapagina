@@ -1,0 +1,184 @@
+* {
+    font-style: italic;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 3rem;
+    /* esto para cambiar el tamaño de la letra*/
+    font-weight: 100;
+    display: flex;
+    gap: 4.1em;
+    border-radius: 30%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    gap: 4.1em;
+}
+
+section.seccion {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+section.seccion1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    align-items: center;
+}
+
+p {
+    font-weight: 3rem;
+    font-style: inherit;
+    align-items: self-start;
+}
+
+.seccion {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 100px;
+    justify-content: center;
+
+}
+
+.seccion1 {
+    display: flex;
+    margin: 0;
+    border: 0;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 7rem;
+
+}
+
+.seccion2 img {
+    background: fixed;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    margin: 70px;
+}
+
+.imagen4 {
+    display: flex;
+}
+
+.imagen5 {
+    display: flex;
+}
+
+.parteabajo {
+    text-align: left;
+}
+
+.parteabajo1 {
+    display: flex;
+    flex: 3;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 ul li {
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 50%;
+}
+
+.checkbtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 480px) {
+    header {
+        background-color: blue;
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imagen {
+        margin-bottom: 50px;
+    }
+
+    h2.fuente.acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 90px;
+        margin-right: 50px;
+        cursor: pointer;
+        display: none;
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: red;
+
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 1s;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 50px;
+    }
+
+    #check:checked~.checkbtn {
+        color: darkgoldenrod;
+    }
+
+}
